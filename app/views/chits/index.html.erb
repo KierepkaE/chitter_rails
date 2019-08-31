@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chit</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chits.each do |chit| %>
+      <tr>
+        <td><%= chit.chit %></td>
+        <td><%= link_to 'Show', chit %></td>
+        <td><%= link_to 'Edit', edit_chit_path(chit) %></td>
+        <td><%= link_to 'Destroy', chit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chit', new_chit_path %>

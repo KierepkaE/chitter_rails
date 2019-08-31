@@ -1,0 +1,22 @@
+<%= form_with(model: chit, local: true) do |form| %>
+  <% if chit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chit.errors.count, "error") %> prohibited this chit from being saved:</h2>
+
+      <ul>
+        <% chit.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :chit %>
+    <%= form.text_area :chit %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
