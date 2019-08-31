@@ -4,7 +4,8 @@ class ChitsController < ApplicationController
   # GET /chits
   # GET /chits.json
   def index
-    @chits = Chit.all
+    @chits = Chit.all.order('created_at DESC')
+    @chit = Chit.new
   end
 
   # GET /chits/1
