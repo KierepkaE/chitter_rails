@@ -1,5 +1,6 @@
-# README
+# Chitter
 
+#### Simple Rails app similar to Twitter
 
 
 Things you may want to cover:
