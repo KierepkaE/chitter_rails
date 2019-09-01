@@ -9,6 +9,10 @@ Things you may want to cover:
 
 `2.5.0`
 
+* Rails version
+
+`6.0.0`
+
 * Tech
 
 `Bulma`
