@@ -1,6 +1,5 @@
 # Chitter
-
-#### Twitter clone
+>  Twitter clone
 
 
 
